@@ -38,175 +38,36 @@
 
 <style>
 body {
-font-family: 'Noto Sans KR', sans-serif;
-color: #222;
-line-height: 1.7;
-word-break: keep-all;
+  font-family: 'MaruBuri', 'Noto Sans KR', serif;
+  line-height: 1.7;
+  color: #333;
 }
 
-h1, h2, h3, h4, .navbar-brand span {
-font-family: 'MaruBuri', serif;
+h1, h2, h3 {
+  font-family: 'MaruBuri', serif;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
-.navbar-brand img {
-object-fit: contain;
+p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+}
+</style>
+<style>
+.btn-custom {
+  background: linear-gradient(135deg, #f6c667, #e89a5b);
+  color: white;
+  border-radius: 30px;
+  padding: 14px 28px;
+  font-weight: 500;
+  border: none;
+  transition: all 0.3s ease;
 }
 
-.hero-title {
-font-size: clamp(2.1rem, 5vw, 4.5rem);
-line-height: 1.2;
-margin-bottom: 1.25rem;
-}
-
-.hero-subtitle {
-font-size: clamp(1.6rem, 3vw, 2.4rem);
-line-height: 1.45;
-font-weight: 400;
-margin-bottom: 1.5rem;
-}
-
-.hero-text {
-font-size: 1.08rem;
-line-height: 1.9;
-color: #555;
-margin-bottom: 0;
-}
-
-.section-title {
-font-size: clamp(1.8rem, 3vw, 3rem);
-line-height: 1.45;
-margin-bottom: 0;
-}
-
-.about-card p,
-.day-intro,
-.day-outro,
-.growth-intro,
-.growth-outro {
-font-size: 1.08rem;
-line-height: 1.9;
-color: #555;
-}
-
-.about-card h3,
-.day-item h3,
-.growth-item h3,
-.day-schedule h3 {
-font-size: 1.45rem;
-line-height: 1.5;
-margin-bottom: 0.9rem;
-}
-
-.about-card {
-margin-bottom: 2.5rem;
-}
-
-.day-section .inner,
-.growth-section .inner {
-width: 100%;
-max-width: 100%;
-}
-
-.day-grid,
-.growth-grid {
-display: grid;
-grid-template-columns: 1fr;
-gap: 1.75rem;
-margin-bottom: 2.75rem;
-}
-
-.day-item,
-.growth-item {
-padding-bottom: 0.25rem;
-}
-
-.day-item p,
-.growth-item p {
-font-size: 1rem;
-line-height: 1.9;
-color: #555;
-margin-bottom: 0;
-}
-
-.day-schedule {
-margin-bottom: 2.5rem;
-}
-
-.day-schedule ul {
-list-style: none;
-padding: 0;
-margin: 0;
-}
-
-.day-schedule li {
-padding: 0.85rem 0;
-border-bottom: 1px solid #e5e5e5;
-font-size: 0.98rem;
-line-height: 1.8;
-color: #444;
-}
-
-.day-schedule strong {
-display: inline-block;
-min-width: 130px;
-color: #222;
-font-weight: 700;
-}
-
-.quote-box .fs-4 {
-line-height: 1.8;
-}
-
-.contact-title {
-line-height: 1.6;
-}
-
-@media (min-width: 992px) {
-.day-grid,
-.growth-grid {
-grid-template-columns: 1fr 1fr;
-gap: 2rem 2.25rem;
-}
-}
-
-@media (max-width: 991.98px) {
-.navbar-brand span {
-font-size: 1rem;
-}
-
-.hero-title {
-margin-top: 3rem !important;
-}
-}
-
-@media (max-width: 768px) {
-.hero-subtitle {
-font-size: 1.55rem;
-}
-
-.hero-text,
-.about-card p,
-.day-intro,
-.day-outro,
-.growth-intro,
-.growth-outro,
-.day-item p,
-.growth-item p {
-font-size: 1rem;
-}
-
-.about-card h3,
-.day-item h3,
-.growth-item h3,
-.day-schedule h3 {
-font-size: 1.25rem;
-}
-
-.day-schedule strong {
-display: block;
-min-width: auto;
-margin-bottom: 0.2rem;
-}
+.btn-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 </style>
 
@@ -276,8 +137,11 @@ style="background-image: url(img/main01.jpg);">
 </div>
 
 <div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
-<h1 class="hero-title fw-bold mt-5">푸른숲 발도르프 학교 어린이집</h1>
-<h2 class="hero-subtitle">
+<h1 class="display-1 fw-bold mt-5">
+푸른숲 발도르프 학교 어린이집
+</h1>
+
+<h2 style="margin-top:20px; line-height:1.4;">
 아이를 잘 키우는 곳이 아니라<br>
 아이 스스로 자라나는 곳
 </h2>
@@ -599,43 +463,25 @@ style="background-image: url(img/gallery02-03.jpg); --bs-aspect-ratio: 150%;">
 </div>
 </div>
 
-<div class="container py-vh-4 w-100 overflow-hidden">
-<div class="row d-flex justify-content-center align-items-center">
-<div class="col-lg-5">
-<h3 class="py-5 border-top border-dark" data-aos="fade-right">전인교육을 위한 발도르프</h3>
-</div>
-
-<div class="col-md-7 quote-box" data-aos="fade-left">
-<blockquote>
-<div class="fs-4 my-3 fw-light pt-4 border-bottom pb-3">
-“발도르프교육학은 전혀 교육학적인 시스템이 아닌, 인간 안에 들어있는 것을 깨어나게 하는 하나의 예술이다.
-근본적으로 보면 발도르프교육학은 끌어당기거나 어디로 유도하는 교육이 아니고 깨우는 교육이다.
-오늘날 바로 이러한 깨움이 요구되고 있다. 우선 교사가 먼저 깨어나야 한다,
-그리고 다음에 그 교사가 아이들과 어린 인간들을 깨워야만 한다.”
-</div>
-<img src="img/steiner.png" width="64" height="64" class="img-fluid rounded-circle me-3" alt="루돌프 슈타이너">
-<span><span class="fw-bold">루돌프 슈타이너</span> (Dr. Rudolf Steiner)</span>
-</blockquote>
-</div>
-</div>
-</div>
-
 <div class="py-vh-6 bg-gray-900 text-light w-100 overflow-hidden" id="contact">
 <div class="container">
 <div class="row d-flex justify-content-center">
 <div class="row d-flex justify-content-center text-center">
 <div class="col-lg-8 text-center" data-aos="fade">
 <p class="text-secondary lead">환영합니다.</p>
-<h2 class="display-6 mb-5 contact-title">
-푸른숲 발도르프 어린이집은 항상 열려 있습니다.<br>
-어린이집에 대해 궁금하신 점이 있으시다면 언제든지 연락주세요.
+
+<h2 class="display-6 mb-5">
+아이를 잘 키우는 곳이 아니라<br>
+아이 스스로 자라나는 곳,<br><br>
+
+푸른숲을 직접 만나보세요.
 </h2>
 
 <div class="col-12">
-<a href="mailto:purunsup.waldorf@gmail.com"
-class="btn btn-warning btn-xl shadow me-3 mt-4 aos-init aos-animate"
-data-aos="fade-down">
-문의 이메일 보내기
+<a href="https://forms.gle/6Uh6zfwhLY8cvy7b6"
+  target="_blank"
+  class="btn btn-custom shadow mt-4">
+  입소상담신청
 </a>
 </div>
 </div>
