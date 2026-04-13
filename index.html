@@ -22,8 +22,8 @@
 
 <meta http-equiv="Content-Script-Type" content="Text/javascript">
 <meta http-equiv="Subject" content="푸른숲 발도르프 학교 어린이집 홈페이지">
-<meta http-equiv="Reply-To" content="gforestkid@naver.com">
-<meta http-equiv="Email" content="gforestkid@naver.com">
+<meta http-equiv="Reply-To" content="purunsup.waldorf@gmail.com">
+<meta http-equiv="Email" content="purunsup.waldorf@gmail.com">
 
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=MaruBuri:wght@400;700&display=swap" rel="stylesheet">
 
@@ -38,175 +38,36 @@
 
 <style>
 body {
-font-family: 'Noto Sans KR', sans-serif;
-color: #222;
-line-height: 1.7;
-word-break: keep-all;
+  font-family: 'MaruBuri', 'Noto Sans KR', serif;
+  line-height: 1.7;
+  color: #333;
 }
 
-h1, h2, h3, h4, .navbar-brand span {
-font-family: 'MaruBuri', serif;
+h1, h2, h3 {
+  font-family: 'MaruBuri', serif;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
-.navbar-brand img {
-object-fit: contain;
+p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+}
+</style>
+<style>
+.btn-custom {
+  background: linear-gradient(135deg, #f6c667, #e89a5b);
+  color: white;
+  border-radius: 30px;
+  padding: 14px 28px;
+  font-weight: 500;
+  border: none;
+  transition: all 0.3s ease;
 }
 
-.hero-title {
-font-size: clamp(2.1rem, 5vw, 4.5rem);
-line-height: 1.2;
-margin-bottom: 1.25rem;
-}
-
-.hero-subtitle {
-font-size: clamp(1.6rem, 3vw, 2.4rem);
-line-height: 1.45;
-font-weight: 400;
-margin-bottom: 1.5rem;
-}
-
-.hero-text {
-font-size: 1.08rem;
-line-height: 1.9;
-color: #555;
-margin-bottom: 0;
-}
-
-.section-title {
-font-size: clamp(1.8rem, 3vw, 3rem);
-line-height: 1.45;
-margin-bottom: 0;
-}
-
-.about-card p,
-.day-intro,
-.day-outro,
-.growth-intro,
-.growth-outro {
-font-size: 1.08rem;
-line-height: 1.9;
-color: #555;
-}
-
-.about-card h3,
-.day-item h3,
-.growth-item h3,
-.day-schedule h3 {
-font-size: 1.45rem;
-line-height: 1.5;
-margin-bottom: 0.9rem;
-}
-
-.about-card {
-margin-bottom: 2.5rem;
-}
-
-.day-section .inner,
-.growth-section .inner {
-width: 100%;
-max-width: 100%;
-}
-
-.day-grid,
-.growth-grid {
-display: grid;
-grid-template-columns: 1fr;
-gap: 1.75rem;
-margin-bottom: 2.75rem;
-}
-
-.day-item,
-.growth-item {
-padding-bottom: 0.25rem;
-}
-
-.day-item p,
-.growth-item p {
-font-size: 1rem;
-line-height: 1.9;
-color: #555;
-margin-bottom: 0;
-}
-
-.day-schedule {
-margin-bottom: 2.5rem;
-}
-
-.day-schedule ul {
-list-style: none;
-padding: 0;
-margin: 0;
-}
-
-.day-schedule li {
-padding: 0.85rem 0;
-border-bottom: 1px solid #e5e5e5;
-font-size: 0.98rem;
-line-height: 1.8;
-color: #444;
-}
-
-.day-schedule strong {
-display: inline-block;
-min-width: 130px;
-color: #222;
-font-weight: 700;
-}
-
-.quote-box .fs-4 {
-line-height: 1.8;
-}
-
-.contact-title {
-line-height: 1.6;
-}
-
-@media (min-width: 992px) {
-.day-grid,
-.growth-grid {
-grid-template-columns: 1fr 1fr;
-gap: 2rem 2.25rem;
-}
-}
-
-@media (max-width: 991.98px) {
-.navbar-brand span {
-font-size: 1rem;
-}
-
-.hero-title {
-margin-top: 3rem !important;
-}
-}
-
-@media (max-width: 768px) {
-.hero-subtitle {
-font-size: 1.55rem;
-}
-
-.hero-text,
-.about-card p,
-.day-intro,
-.day-outro,
-.growth-intro,
-.growth-outro,
-.day-item p,
-.growth-item p {
-font-size: 1rem;
-}
-
-.about-card h3,
-.day-item h3,
-.growth-item h3,
-.day-schedule h3 {
-font-size: 1.25rem;
-}
-
-.day-schedule strong {
-display: block;
-min-width: auto;
-margin-bottom: 0.2rem;
-}
+.btn-custom:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 </style>
 
@@ -276,8 +137,11 @@ style="background-image: url(img/main01.jpg);">
 </div>
 
 <div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
-<h1 class="hero-title fw-bold mt-5">푸른숲 발도르프 학교 어린이집</h1>
-<h2 class="hero-subtitle">
+<h1 class="display-1 fw-bold mt-5">
+푸른숲 발도르프 학교 어린이집
+</h1>
+
+<h2 style="margin-top:20px; line-height:1.4;">
 아이를 잘 키우는 곳이 아니라<br>
 아이 스스로 자라나는 곳
 </h2>
@@ -614,9 +478,9 @@ style="background-image: url(img/gallery02-03.jpg); --bs-aspect-ratio: 150%;">
 </h2>
 
 <div class="col-12">
-<a href="https://forms.gle/6Uh6zfwhLY8cvy7b6"
+  <a href="https://forms.gle/6Uh6zfwhLY8cvy7b6"
   target="_blank"
-  class="btn btn-warning btn-xl shadow me-3 mt-4">
+  class="btn btn-custom shadow mt-4">
   입소상담신청
 </a>
 </div>
