@@ -115,60 +115,76 @@
       }
 
       @media (max-width: 768px) {
-          body {
-            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
-            font-weight: 400;
-            letter-spacing: -0.02em;
-            -webkit-font-smoothing: antialiased;
-          }
+  #top {
+    background: #f7f5f2 !important;
+  }
 
-          h1, h2, h3 {
-            font-family: 'MaruBuri', 'Noto Sans KR', serif;
-            font-weight: 700;
-            letter-spacing: -0.01em;
-          }
+  #top .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 
-          .hero-title {
-            font-weight: 700;
-          }
+  #top .position-absolute.top-0.end-0 {
+    position: relative !important;
+    width: 100% !important;
+    height: 380px !important;
+    min-height: 380px !important;
+    top: auto !important;
+    end: auto !important;
+    right: auto !important;
+    filter: brightness(0.78) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
 
-          .hero-subtitle {
-            font-weight: 500;
-          }
+  #top .row {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 
-          .hero-text {
-            font-weight: 400;
-          }
+  #top .col-lg-7.py-vh-6.position-relative {
+    width: 100% !important;
+    max-width: 100% !important;
+    background: #f7f5f2 !important;
+    padding: 28px 22px 24px 22px !important;
+    border-radius: 0 !important;
+    backdrop-filter: none !important;
+  }
 
-          .section-title {
-            font-weight: 700;
-          }
+  .hero-title {
+    font-size: 2.1rem !important;
+    line-height: 1.2 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.8rem !important;
+  }
 
-         .container {
-            padding-left: 16px;
-            padding-right: 16px;
-        }
+  .hero-subtitle {
+    font-size: 1.15rem !important;
+    line-height: 1.45 !important;
+    margin-bottom: 1rem !important;
+  }
 
-        .py-vh-5 {
-            padding-top: 48px !important;
-            padding-bottom: 48px !important;
-        }
+  .hero-text {
+    font-size: 0.98rem !important;
+    line-height: 1.8 !important;
+    color: #555 !important;
+    margin-top: 0.8rem !important;
+  }
 
-      .py-vh-4 {
-           padding-top: 36px !important;
-          padding-bottom: 36px !important;
-        }
+  .navbar-brand {
+    max-width: calc(100% - 72px);
+  }
 
-       .about-card,
-       .day-item,
-       .growth-item {
-          text-align: left;
-        }
-
-      .section-title {
-          text-align: left;
-      }
-    }
+  .navbar-brand span {
+    font-size: 0.95rem !important;
+    line-height: 1.25 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
     </style>
 
     <!-- Google tag (gtag.js) -->
