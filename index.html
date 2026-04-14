@@ -117,183 +117,148 @@
       }
 
       @media (max-width: 768px) {
+  html, body, p, li, a, span, div {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+  }
 
-        html, body, p, li, a, span, div {
-            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
-        }
+  h1, h2, h3, h4, h5, h6,
+  .hero-title,
+  .hero-subtitle,
+  .section-title,
+  .navbar-brand span,
+  .growth-section.item h3,
+  .day-schedule h3 {
+    font-family: 'MaruBuri', 'Noto Sans KR', serif !important;
+    font-weight: 700 !important;
+  }
 
-        h1, h2, h3, h4, h5, h6,
-        .hero-title,
-        .hero-subtitle,
-        .section-title,
-        .navbar-brand span,
-        .about-card h3,
-        .day-item h3,
-        .growth-item h3,
-        .day-schedule h3 {
-            font-family: 'MaruBuri', 'Noto Sans KR', serif !important;
-            font-weight: 700 !important;
-        }
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-        body {
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
+  #about,
+  #point,
+  #purpose {
+    padding-top: 36px !important;
+    padding-bottom: 36px !important;
+  }
 
-        #about,
-        #point,
-        #purpose {
-            padding-top: 36px !important;
-            padding-bottom: 36px !important;
-        }
+  #top {
+    background: #f7f5f2 !important;
+  }
 
-        .growth-section.item,
-        .day-item,
-        .about-card {
-            margin-top: 20px !important;
-            margin-bottom: 20px !important;
-            padding-top: 14px !important;
-        }        
+  #top .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 
-        .growth-section.item {
-            border-top: 1px solid #e5e5e5;
-            padding-top: 16px;
-            margin-top: 24px;
-        }
+  #top .position-absolute.top-0.end-0 {
+    position: relative !important;
+    width: 100% !important;
+    height: 380px !important;
+    min-height: 380px !important;
+    top: auto !important;
+    right: auto !important;
+    filter: brightness(0.9) contrast(1.05) !important;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
 
-        .growth-section.item h3 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
+  #top .row {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 
-      .growth-section.item p {
-            font-size: 0.98rem;
-            line-height: 1.7;
-            color: #555;
-            line-height: 1.65 !important;
-      }
+  #top .col-lg-7.py-vh-6.position-relative {
+    width: 100% !important;
+    max-width: 100% !important;
+    background: #f7f5f2 !important;
+    padding: 28px 22px 24px 22px !important;
+    border-radius: 0 !important;
+    backdrop-filter: none !important;
+  }
 
-          /* 푸른숲 이야기 아래 카드 스타일 */
-          .about-card {
-            border-top: 1px solid #e5e5e5;
-            padding-top: 16px;
-            margin-bottom: 28px !important;
-          }
+  .hero-title {
+    font-size: 1.8rem !important;
+    line-height: 1.2 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.8rem !important;
+    word-break: keep-all;
+  }
 
-          /* 번호 */
-          .about-card .h5 {
-            font-size: 0.85rem;
-            color: #aaa;
-            margin-bottom: 6px;
-          }
+  .hero-subtitle {
+    font-size: 1.15rem !important;
+    line-height: 1.45 !important;
+    margin-bottom: 1rem !important;
+  }
 
-        /* 소제목 */
-        .about-card h3 {
-            font-size: 1.25rem !important;
-            font-weight: 600;
-            margin-bottom: 10px !important;
-        }
+  .hero-text {
+    font-size: 0.98rem !important;
+    line-height: 1.75 !important;
+    color: #555 !important;
+    margin-top: 0.8rem !important;
+  }
 
-        /* 본문 */
-          .about-card p {
-            font-size: 0.98rem !important;
-            line-height: 1.7 !important;
-            color: #555;
-          }
-          #top {
-            background: #f7f5f2 !important;
-          }
+  .navbar {
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+  }
 
-          #top .container {
-            padding-left: 0 !important;
-            padding-right: 0 !important;
-          }
+  .navbar-brand {
+    max-width: calc(100% - 72px);
+  }
 
-          #top .position-absolute.top-0.end-0 {
-            position: relative !important;
-            width: 100% !important;
-            height: 380px !important;
-            min-height: 380px !important;
-            top: auto !important;
-            end: auto !important;
-            right: auto !important;
-            filter: brightness(0.9) contrast(1.05) !important;
-            background-size: cover !important;
-            background-position: center center !important;
-          }
+  .navbar-brand img {
+    width: 36px !important;
+    height: 36px !important;
+  }
 
-        #top .row {
-            display: flex !important;
-            flex-direction: column-reverse !important;
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-        }
+  .navbar-brand span {
+    font-size: 0.95rem !important;
+    line-height: 1.25 !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
-        #top .col-lg-7.py-vh-6.position-relative {
-            width: 100% !important;
-            max-width: 100% !important;
-            background: #f7f5f2 !important;
-            padding: 28px 22px 24px 22px !important;
-            border-radius: 0 !important;
-            backdrop-filter: none !important;
-        }
+  .navbar-toggler {
+    padding: 6px 8px !important;
+  }
 
-        .hero-title {
-            font-size: 1.8rem !important;
-            line-height: 1.2 !important;
-            margin-top: 0 !important;
-            margin-bottom: 0.8rem !important;
-        }
+  .growth-section.item,
+  .day-item,
+  .about-card {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 14px !important;
+    margin-top: 18px !important;
+    margin-bottom: 20px !important;
+  }
 
-        .hero-subtitle {
-            font-size: 1.15rem !important;
-            line-height: 1.45 !important;
-            margin-bottom: 1rem !important;
-        }
+  .growth-section.item h3,
+  .about-card h3 {
+    font-size: 1.15rem !important;
+    margin-bottom: 8px !important;
+  }
 
-        .hero-text {
-          font-size: 0.98rem !important;
-          line-height: 1.8 !important;
-          color: #555 !important;
-          margin-top: 0.8rem !important;
-        }
+  .growth-section.item p,
+  .about-card p,
+  .day-intro,
+  .day-outro,
+  .growth-intro,
+  .growth-outro {
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+    color: #555 !important;
+  }
 
-      .navbar {
-          padding-top: 6px !important;
-          padding-bottom: 6px !important;
-      }
-
-      .navbar-brand img {
-          width: 36px !important;
-          height: 36px !important;
-      }
-
-      .navbar-brand span {
-          font-size: 0.9rem !important;
-      }
-
-      .navbar-toggler {
-          padding: 6px 8px !important;
-      }
-
-      .navbar-brand {
-          max-width: calc(100% - 72px);
-      }
-
-      .navbar-brand span {
-        font-size: 0.95rem !important;
-        line-height: 1.25 !important;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-
-      h3,
-      .section-title {
-          margin-bottom: 10px !important;
-      }
-    }
+  h3,
+  .section-title {
+    margin-bottom: 10px !important;
+  }
+}
     </style>
 
     <!-- Google tag (gtag.js) -->
@@ -382,7 +347,7 @@
           <div class="col-lg-5">
              <h3 class="py-5 border-top border-dark" data-aos="fade-right" style="font-size:1.6rem; font-weight:700;" >
               푸른숲 이야기
-            </h2>
+            </h3>
             <p class="day-intro">
                 이곳에서 아이는 바뀌지 않습니다<br>
                 대신 아이가 자기 모습으로 자라납니다.<br>
@@ -727,7 +692,7 @@
           아이의 속도를 믿고 기다리는 공간
         </p>
 
-        <h3 style="font-weight:600; margin-bottom:20px; center;">
+        <h3 style="font-weight:600; margin-bottom:20px; text-align:center;">
           푸른숲 발도르프 학교 어린이집
         </h3>
 
